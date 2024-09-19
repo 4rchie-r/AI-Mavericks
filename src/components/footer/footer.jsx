@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './Footer.module.css';
+import styles from './footer.css';
 
 
-function Footer() {
+function footer() {
   return (
     <footer className={styles.footerContainer}>
       <p>Built with react</p>
@@ -11,4 +11,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default footer;
