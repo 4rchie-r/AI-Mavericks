@@ -1,0 +1,25 @@
+.footerContainer {
+    background-color: rgb(16, 7, 83);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .logoImage {
+    margin-bottom: 20px;
+  }
+  
+  
+  @media (min-width: 0px) {
+    .footerContainer {
+      width: 100%;
+    }
+  }
