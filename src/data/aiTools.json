@@ -1,25 +1,7 @@
 {
     "ai_tools": [
-      {
-        "name": "ChatGPT",
-        "description": "A conversational AI model developed by OpenAI that can generate human-like text."
-      },
-      {
-        "name": "DALL-E",
-        "description": "An AI model designed to create images from textual descriptions."
-      },
-      {
-        "name": "Google DeepMind",
-        "description": "A leading AI research lab focusing on creating artificial general intelligence."
-      },
-      {
-        "name": "TensorFlow",
-        "description": "An open-source platform for machine learning used to develop and train AI models."
-      },
-      {
-        "name": "IBM Watson",
-        "description": "An AI platform by IBM that provides tools for building and training AI systems."
-      }
+      { "name": "Tool 1", "description": "Description of Tool 1" },
+      { "name": "Tool 2", "description": "Description of Tool 2" }
     ]
   }
   

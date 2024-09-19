@@ -1,28 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import Flashcard from './flashcardcontainer'; // Import the Flashcard component
-import './flashcards.css'; // Ensure your CSS is linked if needed
+import React from 'react';
+import './flashcards.css'; // Make sure this file exists if you want to style your flashcards
 
-function FlashcardContainer() {
-  const [flashcards, setFlashcards] = useState([]);
-
-  useEffect(() => {
-    fetch('/data/aiTools.json')
-      .then(response => response.json())
-      .then(data => setFlashcards(data.ai_tools))
-      .catch(error => console.error('Error fetching the AI tools:', error));
-  }, []);
-
+function Flashcard({ question, answer }) {
   return (
-    <div className="flashcard-container">
-      {flashcards.map((tool, index) => (
-        <Flashcard 
-          key={index} 
-          question={tool.name} 
-          answer={tool.description} 
-        />
-      ))}
+    <div className="flashcard">
+      <div className="flashcard-question">{question}</div>
+      <div className="flashcard-answer">{answer}</div>
     </div>
   );
 }
 
-export default FlashcardContainer;
+export default Flashcard;
